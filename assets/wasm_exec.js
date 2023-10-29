@@ -5,7 +5,6 @@
 "use strict";
 
 (() => {
-console.log("test"); 
 	const enosys = () => {
 		const err = new Error("not implemented");
 		err.code = "ENOSYS";

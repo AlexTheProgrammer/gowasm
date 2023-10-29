@@ -12,6 +12,9 @@
 ```sh
     cd cmd/server
     go run cmd/server/main.go
+    
+# note that once running changes to the wasm don't require a restart of the server
+# I intend to move the server out into a separate tool.
 ```
 
 ## todo
@@ -21,3 +24,4 @@
 - it should be installed with go install (maybe go get)
 - it should also support `gowasm build` and that should generate a dist/ folder with a classic minified html,css,js but also main.wasm  (can't get much smaller than binary)
 - it should get rid of the need for the developer to have the assets folder (that is the developer should just be writting go code)
+- issue in gopls tooling errors out on syscall/js this is a known issue and apparently there is some work around

@@ -15,7 +15,7 @@ func GetHtml() js.Func {
 
 func main() {
 	ch := make(chan bool)
-	fmt.Printf("see if this still works\n")
+	fmt.Printf("call console.log from golang\n")
 	js.Global().Set("getHtml", GetHtml())
 	<-ch // block indefinitely to keep program alive
 }

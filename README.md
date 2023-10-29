@@ -3,12 +3,14 @@
 ## build
 
 ```sh
-    GOOS=js GOARCH=wasm go build -o assets/main.wasm cmd/wasm/main.go
+    cd cmd/wasm
+    GOOS=js GOARCH=wasm go build -o ../../assets/main.wasm
 ```
 
 ## run
 
 ```sh
+    cd cmd/server
     go run cmd/server/main.go
 ```
 
